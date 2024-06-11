@@ -3,32 +3,54 @@ const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&langua
 
 
 
-async function fetchData(){
+document.getElementById('submitbtn').addEventListener('click', () => {
+    const query = document.getElementById('searchInput').value;
+    searchMovies(query);
+});
 
-    try{
+function searchMovies(query) {
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${encodeURIComponent(query)}&page=1`;
 
-        const searchInput = document.getElementById("searchInput").value.toLowerCase();
-        const response = await fetch(`${url}${searchInput}`);
-
-        if(!response.ok){
-            throw new Error("Could not fetch resource");}
-        
-        if(response.json, searchInput) {
-            response.json === searchInput;
-
-        const data = await response.json();
-        const movieImg = data.poster_path;
-        const imgElement = document.getElementById("MovieCoverPic");
-
-        imgElement.src = movieImg;
-        imgElement.style.display = "block";}
-        
-            console.log("No Movie with this Name in Database")
-    }
-    catch(error){
-        console.error(error);
-    }
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            displayResults(data.results);
+        })
+        .catch(error => {
+            console.error('Error retrieving data:', error);
+        });
 }
 
+function displayResults(movies) {
+    const resultsDiv = document.getElementById('movieDisplay');
+    resultsDiv.innerHTML = '';
+
+    movies.forEach(movie => {
+        if (movie.poster_path) { 
+            const movieElement = document.createElement('div');
+            movieElement.classList.add('movie');
+
+            const imgElement = document.createElement('img');
+            imgElement.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+            imgElement.alt = `${movie.title} Poster`;
+
+            const detailsElement = document.createElement('div');
+            detailsElement.classList.add('movie-details');
+
+            const titleElement = document.createElement('h2');
+            titleElement.textContent = movie.title;
+
+            const overviewElement = document.createElement('p');
+            overviewElement.textContent = movie.overview;
+
+            detailsElement.appendChild(titleElement);
+            detailsElement.appendChild(overviewElement);
+            movieElement.appendChild(imgElement);
+            movieElement.appendChild(detailsElement);
+
+            resultsDiv.appendChild(movieElement);
+        }
+    });
+}
 
 
