@@ -1,12 +1,15 @@
+import { createCards } from "./modules/ui.js"
 import { getPopularMovies, searchMovies } from "./modules/fetchMovies.js"
 
 window.addEventListener('load', async () => {
     try {
         const movies = await getPopularMovies();
-        console.log(movies);
-        const smovies = await searchMovies("abcdefg");
-        console.log(smovies);
+        // const smovies = await searchMovies("abcdefg");
+        movies.forEach((movie)=>{
+            createCards(movie)
+        })
     } catch (error) {
         console.error(error);
     }
 });
+
