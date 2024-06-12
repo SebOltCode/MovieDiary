@@ -1,6 +1,7 @@
+import {addMovieToLocalStorage} from "./storage.js"
 
+const cards = document.querySelector("#movieDisplay")
 export function createCards(item) {
-    const cards = document.querySelector("#movieDisplay")
     const card = document.createElement('div')
     card.innerHTML = `
     <div class="card">
@@ -9,15 +10,22 @@ export function createCards(item) {
         </figure> 
         <div class="movie-info">
             <h3>${item.title}</h3>
-            <p>${item.overview}</p>
-            <button onclick="handleAddToFavorites(${encodeURIComponent(JSON.stringify(item))})"> ❤️</button>
+            <p>Vote: ${item.vote_average}</p>
+            <button onclick="handleAddToFavorites()"> ❤️</button>
         </div>
     </div>
     `;
-    
+    handleAddToFavorites(item)
     cards.appendChild(card);
 }
 
-export function handleAddToFavorites() {
+function handleAddToFavorites(item) {
+    let favoritesMovies = {
+        ID: item.id,
+        Name: item.title,
+        img_url: item.poster_path,
+        vote_average: item.vote_average,
+    }
     
+    addMovieToLocalStorage("favorites", favoritesMovies)
 }
