@@ -22,8 +22,7 @@ export async function searchMovies(query) {
     const res = await fetch(searchUrl);
     if (!res.ok) throw new Error(`Request failed:`);
     const data = await res.json();
-    const movies = await data.results;
-    return movies;
+    return await data.results;
   } catch (error) {
     console.log(error);
   }
