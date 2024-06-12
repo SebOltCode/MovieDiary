@@ -16,7 +16,7 @@ export function createCards(item) {
         </div>
     </div>
     `;
-    handleAddToFavorites(item)
+    // handleAddToFavorites(item)
     cards.appendChild(card);
 }
 
@@ -29,3 +29,4 @@ function handleAddToFavorites(item) {
     }
     addMovieToLocalStorage("favorites", favoritesMovies)
 }
+
