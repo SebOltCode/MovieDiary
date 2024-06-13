@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Movie Diary - Journal</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-indigo-200 text-gray-900">
-        <header >
-            <div class="flex items-center justify-between flex-wrap p-4">
-                <h1 class="flex text-2xl font:bold ">Welcome to our Movie Diary</h1>
-                <nav id="nav">
-                    <ul class="flex">
-                        <li class="mr-14"><a class="uppercase delay-75 duration-300 font-bold mx-5 py-4 pt-1 hover:text-blue-600 active: text-blue-900" href="index.html">Home</a></li>
-                        <li class="mr-14"><a class="uppercase delay-75 duration-300 font-bold mx-5 py-4 pt-1 hover:text-blue-600 active: text-blue-900" href="journal.html">Journal</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    <body>
-        <section id="displayfavorite">
-            <div id="favoriteDisplay" class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Diary - Journal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header class="flex p-10 mx-auto bg-blue-100 justify-between max-w-screen-xl">
+        <div class="uppercase">Logo</div>
+        <nav>
+            <ul class="flex gap-5">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="journal.html">My Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-10 mx-auto max-w-screen-xl">
+        <section class="">
+            <h2 class="font-bold text-xl text-center">My Movie Journal</h2>
+            <div id="output-journal" class="flex gap-4 my-10 flex-wrap justify-center"></div>
         </section>
-        <section id="addComment" class="flex-wrap">
-            <h2 class="flex my-8 mx-5">Enter the name of the Movie you`re searching:</h2>
-            <input class="flex bg-indigo-100 flex my-8 mx-5" type="text">
-                <button class="flex mx-5 bg-indigo-300 border-2 border-red-950 rounded-xl" id="submitcomment">  Submit  </button>
-        </section>
-        <script src="journal.js"></script>    
-    </body>
+        
+    </main>
+    <footer class="fixed bottom-0 p-5 bg-gray-900 w-full text-white text-center">
+        Copyright by Sebastian, Yongqi, Arthur, Konstantin</footer>
+    
+
+    
+    <script src="journal.js"></script>
+</body>
 </html>
