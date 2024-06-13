@@ -60,7 +60,7 @@ function generateMyJournal() {
       const commentWindow = document.createElement("div");
       const closeWindow = document.createElement("img");
   
-      commentWindow.classList = "comment-window z-20 hidden absolute bottom-11 p-2 m-3 bg-blue-100 shadow-md border-red";
+      commentWindow.classList = "comment-window z-20  absolute bottom-11 p-2 hidden bg-blue-100 shadow-md w-full";
       commentWindow.innerHTML = `<textarea id="text-${getMovieID}" class="comment-textarea w-full p-2 h-40 border"></textarea>`;
       
       createPoster.append(commentWindow);
