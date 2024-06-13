@@ -18,6 +18,7 @@ export function createCards(data) {
       Name: data.title,
       img_url: data.poster_path,
       vote_average: data.vote_average,
+      comment:""
     };
     addMovieToLocalStorage("favorites", favoritesMovies);
   };
@@ -52,4 +53,23 @@ export async function handleSearch(query) {
     }
   }
 }
+function displaySuggestions(movies, suggestions) {
+  suggestions.innerHTML = movies.map(movie => `<li onclick="selectMovie('${movie.title}')">${movie.title}</li>
+  `).join('');
+  showDialog()
+}
+function hideDialog(dialog) {
+  dialog.style.display = 'none';
+}
+function showDialog(dialog) {
+  dialog.style.display = 'block';
+}
 
+export async function handleInput(event) {
+  let query = event.target.value
+  const suggestions = document.querySelector("#searchDialog")
+  let movies = searchMovies(query)
+  suggestions.innerHTML = movies.map(movie =>`
+  <li onclick="selectMovie('${movie.title}')">${movie.title}</li>
+`).join('')
+}
