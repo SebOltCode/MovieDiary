@@ -11,8 +11,9 @@ function generateMyJournal() {
       const getMovieTitle = element.Name;
       const getMovieImage = "https://image.tmdb.org/t/p/w500" + element.img_url;
       const getMovieID = element.ID;
+      const getVotes = element.vote_average;
       let getComment = element.comment;
-      console.log(getMovieID);
+      
   
       // MovieCard erstellen und styling
       const movieCard = document.createElement("ul");
@@ -26,8 +27,10 @@ function generateMyJournal() {
       createPosterImg.src = getMovieImage;
       createPoster.appendChild(createPosterImg);
       createPoster.className = "movie-poster relative";
+      const movieVote = document.createElement("div");
+  movieVote.innerHTML = `<div class="flex items-center"><img class="mr-2 bg-black p-1" src="https://img.icons8.com/?size=20&id=37974&format=png&color=ffffff"><p>${getVotes}</p></div>`;
       output.appendChild(movieCard);
-      movieCard.append(createPoster, createTitle);
+      movieCard.append(createPoster, createTitle, movieVote);
 
 
        // FILM aus Journal entfernen
@@ -45,68 +48,76 @@ function generateMyJournal() {
        });
   
       //öffne comment dialog
-    //   const addCommentDialogBtn = document.createElement("button");
-    //   addCommentDialogBtn.classList = "absolute p-2 bg-black bottom-2 right-2 ";
-    //   addCommentDialogBtn.innerHTML = `<img src="https://img.icons8.com/?size=30&id=1ukEkhevqhKc&format=png&color=ffffff">`;
-    //   createPoster.append(addCommentDialogBtn);
+      const addCommentDialogBtn = document.createElement("button");
+      addCommentDialogBtn.classList = "absolute p-2 bg-black bottom-2 right-2 ";
+      addCommentDialogBtn.innerHTML = `<img src="https://img.icons8.com/?size=30&id=1ukEkhevqhKc&format=png&color=ffffff">`;
+      createPoster.append(addCommentDialogBtn);
   
       
   
       //Kommentar schreiben
   
-    //   const commentWindow = document.createElement("div");
-    //   commentWindow.classList = "comment-window hidden absolute bottom-11 p-2 m-3 bg-blue-100 shadow-md border-red";
-    //   commentWindow.innerHTML = `<textarea id="text-${getMovieID}" class="comment-textarea w-full p-2 h-40 border"></textarea>`;
-    //   createPoster.append(commentWindow);
+      const commentWindow = document.createElement("div");
+      const closeWindow = document.createElement("img");
   
-    //   addCommentDialogBtn.addEventListener("click", () => {
-    //     commentWindow.classList.remove("hidden");
-    //   });
+      commentWindow.classList = "comment-window z-20 hidden absolute bottom-11 p-2 m-3 bg-blue-100 shadow-md border-red";
+      commentWindow.innerHTML = `<textarea id="text-${getMovieID}" class="comment-textarea w-full p-2 h-40 border"></textarea>`;
+      
+      createPoster.append(commentWindow);
+      
+      addCommentDialogBtn.addEventListener("click", () => {
+        const bgOverlay = document.getElementById('comment-overlay');
+        bgOverlay.classList.remove("hidden");
+        commentWindow.classList.remove("hidden");
+
+      });
   
       // Kommentar Speichern
-    //   const saveCommentBtn = document.createElement("button");
-    //   saveCommentBtn.textContent = "speichern";
-    //   commentWindow.append(saveCommentBtn);
+      const saveCommentBtn = document.createElement("button");
+      saveCommentBtn.textContent = "speichern";
+      commentWindow.append(saveCommentBtn);
   
-    //   saveCommentBtn.addEventListener("click", () => {
-    //     const getCommentText = document.getElementById(
-    //       `text-${getMovieID}`
-    //     ).value;
+      saveCommentBtn.addEventListener("click", () => {
+        const getCommentText = document.getElementById(
+          `text-${getMovieID}`
+        ).value;
   
-    //     const entries = JSON.parse(localStorage.getItem("favorites")) || [];
-    //     const entryIdToUpdate = getMovieID;
-    //     const newComment = getCommentText;
+        const entries = JSON.parse(localStorage.getItem("favorites")) || [];
+        const entryIdToUpdate = getMovieID;
+        const newComment = getCommentText;
   
-    //     for (let i = 0; i < entries.length; i++) {
-    //       if (entries[i].ID === entryIdToUpdate) {
-    //         entries[i].comment = newComment;
-    //         break;
-    //       }
-    //     }
+        for (let i = 0; i < entries.length; i++) {
+          if (entries[i].ID === entryIdToUpdate) {
+            entries[i].comment = newComment;
+            break;
+          }
+        }
   
-    //     localStorage.setItem("favorites", JSON.stringify(entries));
-    //     location.reload();
-    //   });
+        localStorage.setItem("favorites", JSON.stringify(entries));
+        location.reload();
+      });
   
       // Kommentar anzeigen
-    //   if (getComment !== "") {
-    //     console.log(getComment);
-    //     const commentView = document.createElement("p");
-    //     commentView.classList = "text-wrap text-sm";
-    //     const commentViewHeadline = document.createElement("h4");
-    //     commentViewHeadline.classList = "font-bold";
-    //     commentViewHeadline.textContent = "Meine Notizen: ";
-    //     commentView.textContent = getComment;
-    //     movieCard.append(commentViewHeadline, commentView);
-    //     const showInTextarea = document.getElementById(`text-${getMovieID}`);
-    //     showInTextarea.append(getComment);
-    //   }
+      if (getComment !== "") {
+        console.log(getComment);
+        const commentView = document.createElement("p");
+        commentView.classList = "text-wrap text-sm";
+        const commentViewHeadline = document.createElement("h4");
+        commentViewHeadline.classList = "font-bold";
+        commentViewHeadline.textContent = "Meine Notizen: ";
+        commentView.textContent = getComment;
+        movieCard.append(commentViewHeadline, commentView);
+        const showInTextarea = document.getElementById(`text-${getMovieID}`);
+        showInTextarea.append(getComment);
+      }
   
-     
+     // Komment Overlay
+
+
   
       // STYLING
       let btnStyle = "bg-black text-white p-1 my-2";
-      //saveCommentBtn.classList = btnStyle;
+      saveCommentBtn.classList = btnStyle;
     });
   }
   
