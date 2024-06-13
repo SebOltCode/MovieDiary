@@ -3,15 +3,17 @@ import { searchMovies } from "./fetchMovies.js";
 
 export function createCards(data) {
   const card = document.createElement("div");
+  card.classList = "relative border p-4";
   const movieImage = document.createElement("img");
   movieImage.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
   movieImage.alt = data.title;
   const movieTitle = document.createElement("h3");
+  movieTitle.classList = "my-2 font-bold";
   movieTitle.textContent = data.title;
-  const movieVote = document.createElement("p");
-  movieVote.textContent = `Vote: ${data.vote_average}`;
+  const movieVote = document.createElement("div");
+  movieVote.innerHTML = `<div class="flex items-center"><img class="mr-2 bg-black p-1" src="https://img.icons8.com/?size=20&id=37974&format=png&color=ffffff"><p>${data.vote_average}</p></div>`;
   const addToFavorites = document.createElement("button");
-  addToFavorites.textContent = "❤️";
+  addToFavorites.innerHTML = `<img class="absolute bg-black p-2 top-6 right-6"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
   addToFavorites.onclick = () => {
     let favoritesMovies = {
       ID: data.id,
