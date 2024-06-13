@@ -6,9 +6,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     displayCards(movies);
     const searchBtn = document.querySelector("#searchBtn");
     const searchInput = document.querySelector("#searchInput");
-
     searchBtn.addEventListener("click",()=>{
-      handleSearch(searchInput.value        )
+      handleSearch(searchInput.value)
+      searchInput.value = ""
     })
   } catch (error) {
     console.error(error);
