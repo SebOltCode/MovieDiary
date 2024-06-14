@@ -20,10 +20,12 @@ export function createCards(data) {
       Name: data.title,
       img_url: data.poster_path,
       vote_average: data.vote_average,
-      comment:""
+      comment: "",
     };
     addToFavorites.innerHTML = `<img class="absolute bg-red-800 p-2 top-6 right-6"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
     addMovieToLocalStorage("favorites", favoritesMovies);
+    showFavoriteDialog()
+    setTimeout(hiddenFavoriteDialog(), 1000);
   };
   card.appendChild(movieImage);
   card.appendChild(movieTitle);
@@ -34,7 +36,7 @@ export function createCards(data) {
 
 export async function displayCards(movies) {
   const cards = document.querySelector("#movieDisplay");
-  cards.innerHTML = ""
+  cards.innerHTML = "";
   if (movies.length) {
     await movies.forEach((movie) => {
       let movieCard = createCards(movie);
@@ -56,23 +58,10 @@ export async function handleSearch(query) {
     }
   }
 }
-function displaySuggestions(movies, suggestions) {
-  suggestions.innerHTML = movies.map(movie => `<li onclick="selectMovie('${movie.title}')">${movie.title}</li>
-  `).join('');
-  showDialog()
+let dialog = document.querySelector("#dialog");
+export async function showFavoriteDialog() {
+  dialog.classList = `fixed z-[999] top-0 right-0 w-full h-full bg-black bg-opacity-70 flex  justify-center items-center text-xl text-white`;
 }
-function hideDialog(dialog) {
-  dialog.style.display = 'none';
-}
-function showDialog(dialog) {
-  dialog.style.display = 'block';
-}
-
-export async function handleInput(event) {
-  let query = event.target.value
-  const suggestions = document.querySelector("#searchDialog")
-  let movies = searchMovies(query)
-  suggestions.innerHTML = movies.map(movie =>`
-  <li onclick="selectMovie('${movie.title}')">${movie.title}</li>
-`).join('')
+export async function hiddenFavoriteDialog() {
+  dialog.classList = "hidden"
 }
