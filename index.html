@@ -29,12 +29,13 @@
       </svg>
     </div>
     <nav>
-        <ul class="flex gap-5">
+        <ul class="flex gap-5 uppercase font-bold">
             <li><a href="index.html">Start</a></li>
             <li><a href="journal.html">My Journal</a></li>
         </ul>
     </nav>
 </header>
+<main class="mx-auto pb-14">
   <h2 class="font-bold text-xl text-center m-4">Enter the name of the Movie you`re searching:</h2>
   <section id="searchbar" class="flex gap-10 justify-center">
     <input class="border rounded-xl w-2/4 p-2" type="text" id="searchInput"
@@ -45,7 +46,8 @@
   <section id="movieDisplay" class="m-8 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4"></section>
   <script src="./main.js" type="module"></script>
 
-  <footer class=" p-5 bg-gray-900 w-full text-white text-center">
+</main>
+  <footer class=" p-5 bg-gray-900 fixed bottom-0 w-full text-white text-center">
     Copyright by Sebastian, Yongqi, Arthur, Konstantin</footer>
 </body>
 
