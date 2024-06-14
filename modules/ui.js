@@ -25,7 +25,7 @@ export function createCards(data) {
     addToFavorites.innerHTML = `<img class="absolute bg-red-800 p-2 top-6 right-6"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
     addMovieToLocalStorage("favorites", favoritesMovies);
     showFavoriteDialog()
-    setTimeout(hiddenFavoriteDialog(), 1000);
+    setTimeout(()=>hiddenFavoriteDialog(), 1000);
   };
   card.appendChild(movieImage);
   card.appendChild(movieTitle);
@@ -59,9 +59,9 @@ export async function handleSearch(query) {
   }
 }
 let dialog = document.querySelector("#dialog");
-export async function showFavoriteDialog() {
+function showFavoriteDialog() {
   dialog.classList = `fixed z-[999] top-0 right-0 w-full h-full bg-black bg-opacity-70 flex  justify-center items-center text-xl text-white`;
 }
-export async function hiddenFavoriteDialog() {
+function hiddenFavoriteDialog() {
   dialog.classList = "hidden"
 }
