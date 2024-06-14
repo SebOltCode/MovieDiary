@@ -60,7 +60,7 @@ export async function handleSearch(query) {
 }
 let dialog = document.querySelector("#dialog");
 function showFavoriteDialog() {
-  dialog.classList = `fixed z-[999] top-0 right-0 w-full h-full bg-black bg-opacity-70 flex  justify-center items-center text-xl text-white`;
+  dialog.classList = `fixed z-[999] top-0 right-0 w-full h-full bg-black bg-opacity-70 flex justify-center flex-col text-4xl text-white`;
 }
 function hiddenFavoriteDialog() {
   dialog.classList = "hidden"
