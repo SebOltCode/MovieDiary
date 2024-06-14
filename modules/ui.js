@@ -3,7 +3,7 @@ import { searchMovies } from "./fetchMovies.js";
 
 export function createCards(data) {
   const card = document.createElement("div");
-  card.classList = "relative border p-4";
+  card.classList = "relative border p-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6";
   const movieImage = document.createElement("img");
   movieImage.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
   movieImage.alt = data.title;
@@ -60,7 +60,7 @@ export async function handleSearch(query) {
 }
 let dialog = document.querySelector("#dialog");
 function showFavoriteDialog() {
-  dialog.classList = `fixed z-[999] top-0 right-0 w-full h-full bg-black bg-opacity-70 flex  justify-center items-center text-xl text-white`;
+  dialog.classList = `fixed z-[999] top-0 right-0 w-full h-full bg-black bg-opacity-70 flex justify-center flex-col text-4xl text-white`;
 }
 function hiddenFavoriteDialog() {
   dialog.classList = "hidden"
