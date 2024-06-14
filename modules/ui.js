@@ -22,6 +22,7 @@ export function createCards(data) {
       vote_average: data.vote_average,
       comment:""
     };
+    addToFavorites.innerHTML = `<img class="absolute bg-red-800 p-2 top-6 right-6"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
     addMovieToLocalStorage("favorites", favoritesMovies);
   };
   card.appendChild(movieImage);
