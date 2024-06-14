@@ -6,7 +6,7 @@
 function generateMyJournal() {
   const output = document.getElementById("output-journal");
   const getMyJournal = JSON.parse(localStorage.getItem("favorites")) || [];
-  console.log(getMyJournal);
+  
   getMyJournal.forEach((element) => {
     const getMovieTitle = element.Name;
     const getMovieImage = "https://image.tmdb.org/t/p/w500" + element.img_url;
@@ -17,7 +17,7 @@ function generateMyJournal() {
     // MovieCard erstellen und styling
     const movieCard = document.createElement("ul");
     movieCard.classList =
-      "relative border p-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6";
+      "relative border p-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/5";
     movieCard.id = getMovieID;
     const createTitle = document.createElement("li");
     createTitle.classList = "movie-title my-2 font-bold";
@@ -103,7 +103,6 @@ function generateMyJournal() {
 
     // Kommentar anzeigen
     if (getComment !== "") {
-      console.log(getComment);
       const commentView = document.createElement("p");
       commentView.classList = "text-wrap text-sm";
       const commentViewHeadline = document.createElement("h4");
@@ -114,7 +113,11 @@ function generateMyJournal() {
       const showInTextarea = document.getElementById(`text-${getMovieID}`);
       showInTextarea.append(getComment);
     }
+
+
+    
   });
 }
+
 
 generateMyJournal();
