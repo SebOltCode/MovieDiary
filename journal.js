@@ -17,10 +17,10 @@ function generateMyJournal() {
   
       // MovieCard erstellen und styling
       const movieCard = document.createElement("ul");
-      movieCard.classList = "p-4 border relative max-w-[342px]";
+      movieCard.classList = "relative border p-4  sm:basis-1/3 md:basis-1/4 lg:basis-1/6";
       movieCard.id = getMovieID;
       const createTitle = document.createElement("li");
-      createTitle.className = "movie-title my-2 font-bold ";
+      createTitle.className = "movie-title my-2 font-bold";
       createTitle.textContent = getMovieTitle;
       const createPoster = document.createElement("li");
       const createPosterImg = document.createElement("img");
@@ -60,7 +60,7 @@ function generateMyJournal() {
       const commentWindow = document.createElement("div");
       const closeWindow = document.createElement("img");
   
-      commentWindow.classList = "comment-window z-20  absolute bottom-11 p-2 hidden bg-blue-100 shadow-md w-full";
+      commentWindow.classList = "comment-window z-20 absolute bottom-11 p-2 hidden bg-blue-100 shadow-md w-full";
       commentWindow.innerHTML = `<textarea id="text-${getMovieID}" class="comment-textarea w-full p-2 h-40 border"></textarea>`;
       
       createPoster.append(commentWindow);

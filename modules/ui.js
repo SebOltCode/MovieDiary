@@ -3,7 +3,7 @@ import { searchMovies } from "./fetchMovies.js";
 
 export function createCards(data) {
   const card = document.createElement("div");
-  card.classList = "relative border p-4";
+  card.classList = "relative border p-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6";
   const movieImage = document.createElement("img");
   movieImage.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
   movieImage.alt = data.title;
