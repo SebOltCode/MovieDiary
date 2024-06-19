@@ -5,7 +5,12 @@ export function createCards(data) {
   const card = document.createElement("div");
   card.classList = "relative border p-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6";
   const movieImage = document.createElement("img");
-  movieImage.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
+
+  if (data.poster_path === null) {
+    movieImage.src = "./assets/No-Image-Placeholder.png";
+  } else {
+    movieImage.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
+  }
   movieImage.alt = data.title;
   const movieTitle = document.createElement("h3");
   movieTitle.classList = "my-2 font-bold";

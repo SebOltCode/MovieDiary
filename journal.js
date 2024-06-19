@@ -24,7 +24,14 @@ function generateMyJournal() {
     createTitle.textContent = getMovieTitle;
     const createPoster = document.createElement("li");
     const createPosterImg = document.createElement("img");
+    
+    // check ob Bild vorhanden
+    if (element.img_url !== null) {
     createPosterImg.src = getMovieImage;
+    } else {
+      createPosterImg.src = "./assets/No-Image-Placeholder.png";
+    }
+
     createPoster.appendChild(createPosterImg);
     createPoster.classList = "movie-poster relative";
     const movieVote = document.createElement("div");
