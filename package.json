@@ -17,7 +17,6 @@
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
-    "@parcel/watcher": "^2.4.1",
-    "lightningcss": "^1.25.1"
+    "@parcel/watcher": "^2.4.1"
   }
 }
