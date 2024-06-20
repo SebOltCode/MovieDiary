@@ -6,7 +6,7 @@ dist/
 
 # Dependency Directories
 node_modules/
-
+.parcel-cache/
 # Cache and Temporary Files
 .cache/
 *.log
