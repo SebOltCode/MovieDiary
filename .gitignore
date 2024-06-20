@@ -1,0 +1,26 @@
+# Environment Variables (API Keys, etc.)
+.env
+
+# Parcel Build Output
+dist/
+
+# Dependency Directories
+node_modules/
+
+# Cache and Temporary Files
+.cache/
+*.log
+*.tmp
+*~
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# VS Code Specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Optional: If you don't want to track these
+**/.history/
