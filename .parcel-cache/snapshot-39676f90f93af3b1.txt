@@ -1,4 +1,4 @@
-6162
+6168
 49C:\Users\Panda\MovieDiary\node_modules\micromatch133627555141158966 1
 103C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\_\_class_static_private_field_spec_set\package.json133627555151147753 0
 70C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\regions\ME.js133627555153734807 0
@@ -14,9 +14,9 @@
 76C:\Users\Panda\MovieDiary\node_modules\.bin\node-gyp-build-optional-packages133627555157225486 0
 56C:\Users\Panda\MovieDiary\node_modules\lmdb\util\when.js133627555149744603 0
 79C:\Users\Panda\MovieDiary\node_modules\lmdb\dependencies\v8\v8-fast-api-calls.h133627555149457373 0
+48C:\Users\Panda\MovieDiary\dist\index.63aff760.js133633578388905274 0
 35C:\Users\Panda\MovieDiary\.cache\9e133632871048248014 1
-48C:\Users\Panda\MovieDiary\dist\index.63aff760.js133633576499534154 0
-43C:\Users\Panda\MovieDiary\dist\journal.html133633576499805204 0
+43C:\Users\Panda\MovieDiary\dist\journal.html133633578388745405 0
 77C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\_\_using_ctx\package.json133627555152027774 0
 65C:\Users\Panda\MovieDiary\node_modules\nth-check\lib\esm\index.js133627555141473279 0
 76C:\Users\Panda\MovieDiary\node_modules\css-tree\cjs\syntax\node\Brackets.cjs133627555143356969 0
@@ -27,7 +27,6 @@
 85C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\esm\_class_private_method_init.js133627555149497351 0
 55C:\Users\Panda\MovieDiary\node_modules\posthtml\license133627555139881202 0
 51C:\Users\Panda\MovieDiary\node_modules\htmlnano\lib133627555148436775 1
-52C:\Users\Panda\MovieDiary\dist\index.63aff760.js.map133633576499616682 0
 89C:\Users\Panda\MovieDiary\node_modules\css-select\node_modules\entities\lib\esm\encode.js133627555144073136 0
 54C:\Users\Panda\MovieDiary\dist\journal.946edfe5.js.map133633576499626657 0
 94C:\Users\Panda\MovieDiary\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt133627555150077945 0
@@ -82,12 +81,11 @@
 61C:\Users\Panda\MovieDiary\node_modules\nth-check\lib\parse.js133627555142470323 0
 49C:\Users\Panda\MovieDiary\node_modules\css-select133627555147902832 1
 70C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\regions\FO.js133627555152133204 0
-38C:\Users\Panda\MovieDiary\journal.html133628416048688357 0
+38C:\Users\Panda\MovieDiary\journal.html133633578386381444 0
 76C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\gamepad.js133627555152308460 0
 112C:\Users\Panda\MovieDiary\node_modules\css-select\node_modules\entities\lib\esm\generated\decode-data-xml.js.map133627555145726018 0
 66C:\Users\Panda\MovieDiary\node_modules\domelementtype\lib\index.js133627555141279627 0
 68C:\Users\Panda\MovieDiary\node_modules\mdn-data\api\inheritance.json133627555143673868 0
-33C:\Users\Panda\MovieDiary\.vscode133628416048668642 1
 55C:\Users\Panda\MovieDiary\node_modules\type-fest\source133627555146278295 1
 66C:\Users\Panda\MovieDiary\node_modules\lightningcss-win32-x64-msvc133627555141158966 1
 90C:\Users\Panda\MovieDiary\node_modules\@parcel\workers\test\integration\workerfarm\echo.js133627555144404028 0
@@ -113,7 +111,7 @@
 70C:\Users\Panda\MovieDiary\node_modules\css-tree\lib\tokenizer\index.js133627555150723134 0
 57C:\Users\Panda\MovieDiary\node_modules\env-paths\index.js133627555140311220 0
 28C:\Users\Panda\MovieDiary\cd133627503893454820 1
-30C:\Users\Panda\MovieDiary\dist133633576499825261 1
+30C:\Users\Panda\MovieDiary\dist133633578389025754 1
 79C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\esm\_to_consumable_array.js133627555150309556 0
 71C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\_\_array_with_holes133627555150604022 1
 67C:\Users\Panda\MovieDiary\node_modules\svgo\plugins\inlineStyles.js133627555147308279 0
@@ -131,9 +129,9 @@
 63C:\Users\Panda\MovieDiary\node_modules\escalade\sync\index.d.ts133627555142904748 0
 85C:\Users\Panda\MovieDiary\node_modules\@parcel\transformer-js\lib\esmodule-helpers.js133627555140482497 0
 62C:\Users\Panda\MovieDiary\node_modules\semver\functions\neq.js133627555145550802 0
+36C:\Users\Panda\MovieDiary\journal.js133633578386391449 0
 70C:\Users\Panda\MovieDiary\node_modules\@parcel\core\test\utils.test.js133627555150335866 0
 93C:\Users\Panda\MovieDiary\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\utils133627555148641510 1
-36C:\Users\Panda\MovieDiary\journal.js133628416048698370 0
 79C:\Users\Panda\MovieDiary\node_modules\csso\node_modules\mdn-data\l10n\css.json133627555143305935 0
 74C:\Users\Panda\MovieDiary\node_modules\svgo\lib\svgo\css-select-adapter.js133627555145685995 0
 110C:\Users\Panda\MovieDiary\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\tokenizer\index.js133627555148146334 0
@@ -148,7 +146,7 @@
 97C:\Users\Panda\MovieDiary\node_modules\@parcel\runtime-service-worker\lib\ServiceWorkerRuntime.js133627555140492499 0
 56C:\Users\Panda\MovieDiary\node_modules\lmdb\node_modules133627555126172735 1
 81C:\Users\Panda\MovieDiary\node_modules\css-tree\lib\syntax\function\expression.js133627555150358602 0
-33C:\Users\Panda\MovieDiary\modules133628416048847057 1
+33C:\Users\Panda\MovieDiary\modules133633578386431447 1
 58C:\Users\Panda\MovieDiary\node_modules\stable\package.json133627555139793694 0
 94C:\Users\Panda\MovieDiary\node_modules\csso\node_modules\css-tree\cjs\syntax\config\walker.cjs133627555149507369 0
 44C:\Users\Panda\MovieDiary\node_modules\json5133627555143809100 1
@@ -504,6 +502,7 @@
 78C:\Users\Panda\MovieDiary\node_modules\electron-to-chromium\full-versions.json133627555143548700 0
 64C:\Users\Panda\MovieDiary\node_modules\cosmiconfig\dist\merge.js133627555143426962 0
 46C:\Users\Panda\MovieDiary\node_modules\timsort133627555142656411 1
+57C:\Users\Panda\MovieDiary\assets\No-Image-Placeholder.png133633578386371452 0
 107C:\Users\Panda\MovieDiary\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeEmptyAttrs.js133627555146893464 0
 53C:\Users\Panda\MovieDiary\node_modules\to-regex-range133627555141128941 1
 70C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\regions\KE.js133627555153289552 0
@@ -1514,7 +1513,6 @@
 98C:\Users\Panda\MovieDiary\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_stat.c133627555146706925 0
 66C:\Users\Panda\MovieDiary\node_modules\ordered-binary\package.json133627555143325946 0
 85C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\css-text-justify.js133627555151102614 0
-47C:\Users\Panda\MovieDiary\.vscode\settings.json133628416048668642 0
 55C:\Users\Panda\MovieDiary\node_modules\json5\LICENSE.md133627555143703862 0
 90C:\Users\Panda\MovieDiary\node_modules\posthtml\node_modules\posthtml-parser\dist\index.js133627555140971792 0
 115C:\Users\Panda\MovieDiary\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\UnicodeRange.js133627555149542501 0
@@ -2388,6 +2386,7 @@
 60C:\Users\Panda\MovieDiary\node_modules\braces\lib\compile.js133627555140440833 0
 57C:\Users\Panda\MovieDiary\node_modules\htmlnano\index.mjs133627555148485688 0
 80C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\import-maps.js133627555152882998 0
+54C:\Users\Panda\MovieDiary\dist\journal.97097fc5.js.map133633578389025754 0
 59C:\Users\Panda\MovieDiary\node_modules\htmlnano\LICENSE.txt133627555149104155 0
 72C:\Users\Panda\MovieDiary\node_modules\@parcel\transformer-image\LICENSE133627555139911193 0
 60C:\Users\Panda\MovieDiary\node_modules\htmlnano\package.json133627555146843457 0
@@ -3469,6 +3468,7 @@
 62C:\Users\Panda\MovieDiary\node_modules\css-select\node_modules133627555126192745 1
 59C:\Users\Panda\MovieDiary\node_modules\css-select\README.md133627555147943245 0
 71C:\Users\Panda\MovieDiary\node_modules\css-select\node_modules\domutils133627555146863453 1
+49C:\Users\Panda\MovieDiary\modules\removeButton.js133633578386421457 0
 81C:\Users\Panda\MovieDiary\node_modules\css-select\node_modules\entities\readme.md133627555147153110 0
 53C:\Users\Panda\MovieDiary\node_modules\@parcel\fs\lib133627555144705427 1
 94C:\Users\Panda\MovieDiary\node_modules\css-select\node_modules\domutils\lib\esm\helpers.js.map133627555145227770 0
@@ -3779,6 +3779,7 @@
 76C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\cjs\_new_arrow_check.cjs133627555147473919 0
 54C:\Users\Panda\MovieDiary\node_modules\clone\clone.iml133627555142157323 0
 70C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\regions\SD.js133627555155085125 0
+47C:\Users\Panda\MovieDiary\modules\createCard.js133633578386411463 0
 70C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\regions\WF.js133627555156586899 0
 52C:\Users\Panda\MovieDiary\node_modules\clone\LICENSE133627555141319613 0
 57C:\Users\Panda\MovieDiary\node_modules\clone\package.json133627555139891187 0
@@ -3791,6 +3792,7 @@
 80C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\videotracks.js133627555156140953 0
 79C:\Users\Panda\MovieDiary\node_modules\chrome-trace-event\dist\trace-event.d.ts133627555141820782 0
 77C:\Users\Panda\MovieDiary\node_modules\chrome-trace-event\dist\trace-event.js133627555140031192 0
+49C:\Users\Panda\MovieDiary\modules\commentUtils.js133633578386401460 0
 55C:\Users\Panda\MovieDiary\node_modules\chalk\index.d.ts133627555142575452 0
 52C:\Users\Panda\MovieDiary\node_modules\chalk\license133627555139941195 0
 51C:\Users\Panda\MovieDiary\node_modules\chalk\source133627555141330525 1
@@ -4305,6 +4307,7 @@
 93C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\mdn-text-decoration-line.js133627555153712226 0
 85C:\Users\Panda\MovieDiary\node_modules\@parcel\package-manager\src\JSONParseStream.js133627555144906890 0
 85C:\Users\Panda\MovieDiary\node_modules\@swc\helpers\_\_class_extract_field_descriptor133627555150921663 1
+32C:\Users\Panda\MovieDiary\assets133633578386371452 1
 98C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\mdn-text-decoration-shorthand.js133627555153712226 0
 94C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\mdn-text-decoration-style.js133627555153722222 0
 86C:\Users\Panda\MovieDiary\node_modules\caniuse-lite\data\features\wasm-multi-memory.js133627555156254448 0
@@ -6034,7 +6037,6 @@
 50C:\Users\Panda\MovieDiary\node_modules\.bin\semver133627555157240794 0
 54C:\Users\Panda\MovieDiary\node_modules\.bin\semver.ps1133627555157240794 0
 44C:\Users\Panda\MovieDiary\modules\storage.js133628416048847057 0
-39C:\Users\Panda\MovieDiary\modules\ui.js133628416048847057 0
 35C:\Users\Panda\MovieDiary\.cache\00133632871047029460 1
 35C:\Users\Panda\MovieDiary\.cache\02133632871047029460 1
 35C:\Users\Panda\MovieDiary\.cache\03133632871047039464 1
@@ -6161,3 +6163,7 @@
 35C:\Users\Panda\MovieDiary\.cache\fd133632871048962327 1
 35C:\Users\Panda\MovieDiary\.cache\ff133632871048982482 1
 71C:\Users\Panda\MovieDiary\.cache\1a\2d168ec3667d41e1f55a294f7770cc.json133632871049012469 0
+54C:\Users\Panda\MovieDiary\modules\localStorageUtils.js133633578386421457 0
+39C:\Users\Panda\MovieDiary\modules\ui.js133633578386431447 0
+52C:\Users\Panda\MovieDiary\dist\index.63aff760.js.map133633578388934477 0
+50C:\Users\Panda\MovieDiary\dist\journal.97097fc5.js133633578389005774 0
