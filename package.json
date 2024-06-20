@@ -4,10 +4,15 @@
   "description": "",
   "main": "main.js",
   "type": "module",
+  "source": "index.html",
   "scripts": {
-    "start": "node main.mjs"
+    "dev": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
