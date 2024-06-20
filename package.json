@@ -5,7 +5,7 @@
   "type": "module",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel",
+    "dev": "cp -vR ./src/static ./dist && parcel",
     "build": "cp -vR ./src/static ./dist && parcel build",
     "clean": "rm -rf dist .parcel-cache"
   },
