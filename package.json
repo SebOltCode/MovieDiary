@@ -6,7 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "cp -vR ./src/static ./dist && parcel build",
+    "clean": "rm -rf dist .parcel-cache"
   },
   "keywords": [],
   "author": "",
