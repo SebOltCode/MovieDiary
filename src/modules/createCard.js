@@ -12,7 +12,7 @@ export function createMovieCard(element) {
     const createPoster = document.createElement("li");
     const createPosterImg = document.createElement("img");
     
-    createPosterImg.src = element.img_url ? `https://image.tmdb.org/t/p/w500${element.img_url}` : "./static/No-Image-Placeholder.png";
+    createPosterImg.src = element.img_url ? `https://image.tmdb.org/t/p/w500${element.img_url}` : "./No-Image-Placeholder.png";
   
     createPoster.appendChild(createPosterImg);
     createPoster.classList = "movie-poster relative";
