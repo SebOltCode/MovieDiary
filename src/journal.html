@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./input.css">
 </head>
 
-<body class="min-height:100vh flex flex-col">
-    <header class="flex p-10 mx-auto w-full bg-blue-100 justify-between">
-        <div>
+<body>
+  <header class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14 mx-auto bg-blue-100 justify-between">
+        <div class="mb-5 sm:mb-0">
         <svg id="logo-79" class="gradient" width="125" height="40" viewBox="0 0 125 40" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path class="ccustom"
@@ -28,18 +28,24 @@
               </linearGradient>
             </defs>
           </svg>
-        
         </div>
-        <nav>
-            <ul class="flex gap-5 uppercase font-bold">
-                <li><a href="index.html">Start</a></li>
-                <li><a href="journal.html">My Journal</a></li>
-            </ul>
-        </nav>
+        <nav class="lg:flex lg:justify-end">
+          <ul class="flex gap-5 uppercase font-bold">
+              <li><a href="index.html" class="lg:bg-transparent lg:hover:bg-transparent lg:text-black lg:hover:text-black bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start</a></li>
+              <li><a href="journal.html" class="lg:bg-transparent lg:hover:bg-transparent lg:text-black lg:hover:text-black bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">My Journal</a></li>
+          </ul>
+      </nav>
     </header>
     <main class="mx-auto pb-14">
+      <h2 class="font-bold text-xl text-center m-4">My Movie Journal</h2>
+  <!-- <section id="searchbar" class="flex gap-10 justify-center">
+    <input class="border rounded-xl w-2/4 p-2" type="text" id="searchInput"
+      placeholder="Name of the Movie" />
+    <button id="searchBtn" class="bg-blue-500 px-4 rounded-xl text-white">
+      Search</button><br />
+  </section> -->
         <section class="">
-            <h2 class="font-bold text-xl text-center m-4">My Movie Journal</h2>
+            
             <div id="output-journal" class="m-8 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
         </section>
     </main>

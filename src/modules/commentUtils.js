@@ -1,13 +1,10 @@
-// commentUtils.js
-
 import { getFavorites, setFavorites } from './localStorageUtils.js';
 
 export function addCommentButton(createPoster, getMovieID) {
   const addCommentDialogBtn = document.createElement("button");
-  addCommentDialogBtn.classList = "absolute p-2 bg-black top-20 right-6 ";
+  addCommentDialogBtn.classList = "absolute p-2 bg-black top-20 right-6 sm:block hidden";
   addCommentDialogBtn.innerHTML = `<img src="https://img.icons8.com/?size=30&id=1ukEkhevqhKc&format=png&color=ffffff">`;
   createPoster.append(addCommentDialogBtn);
-
 
   const commentWindow = document.createElement("div");
   const closeWindow = document.createElement("img");
@@ -25,14 +22,17 @@ export function addCommentButton(createPoster, getMovieID) {
 
   createPoster.append(commentWindow);
 
-  addCommentDialogBtn.addEventListener("click", () => {
+  const showCommentWindow = () => {
     const bgOverlay = document.getElementById("comment-overlay");
     bgOverlay.classList.remove("hidden");
     commentWindow.classList.remove("hidden");
-  });
+  };
+
+  addCommentDialogBtn.addEventListener("click", showCommentWindow);
+  createPoster.addEventListener("click", showCommentWindow);
 
   const saveCommentBtn = document.createElement("button");
-  saveCommentBtn.textContent = "speichern";
+  saveCommentBtn.textContent = "save comment";
   commentWindow.append(closeWindow, commentTextArea, saveCommentBtn);
   saveCommentBtn.classList = "bg-black text-white p-1 my-2";
   saveCommentBtn.addEventListener("click", () => {
