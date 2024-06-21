@@ -7,7 +7,7 @@ export function createCards(data) {
   const movieImage = document.createElement("img");
 
   if (data.poster_path === null) {
-    movieImage.src = "./assets/No-Image-Placeholder.png";
+    movieImage.src = "./No-Image-Placeholder.png";
   } else {
     movieImage.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
   }
