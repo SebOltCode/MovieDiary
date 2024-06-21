@@ -16,15 +16,14 @@ export function createCards(data) {
   movieTitle.classList = "my-2 font-bold";
   movieTitle.textContent = data.title;
   const movieVote = document.createElement("div");
-  movieVote.innerHTML = `<div class="flex items-center"><img class="mr-2 bg-black p-1 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" src="https://img.icons8.com/?size=20&id=37974&format=png&color=ffffff"><p>${data.vote_average}</p></div>`;
+  movieVote.innerHTML = `<div class="flex items-center"><img class="mr-2 bg-black p-1" src="https://img.icons8.com/?size=20&id=37974&format=png&color=ffffff"><p>${data.vote_average}</p></div>`;
   const addToFavorites = document.createElement("button");
 
   //checks if the movie is already in the favorites list
   let favoritesMovies = JSON.parse(localStorage.getItem("favorites")) || [];
   let isFavorite = favoritesMovies.some(movie => movie.ID === data.id);
 
-
-  addToFavorites.innerHTML = `<img class="absolute ${isFavorite ? 'bg-red-800' : 'bg-black'} p-2 top-6 right-6 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
+  addToFavorites.innerHTML = `<img class="absolute ${isFavorite ? 'bg-red-800' : 'bg-black'} p-2 top-6 right-6 w-1/6 md:w-auto"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
   addToFavorites.onclick = () => {
     let favoritesMovies = {
       ID: data.id,
@@ -33,7 +32,7 @@ export function createCards(data) {
       vote_average: data.vote_average,
       comment: "",
     };
-    addToFavorites.innerHTML = `<img class="absolute bg-red-800 p-2 top-6 right-6"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
+    addToFavorites.innerHTML = `<img class="absolute bg-red-800 p-2 top-6 right-6 w-1/6 md:w-auto"  src="https://img.icons8.com/?size=30&id=16076&format=png&color=ffffff">`;
     addMovieToLocalStorage("favorites", favoritesMovies);
     showFavoriteDialog()
     setTimeout(()=>hiddenFavoriteDialog(), 1000);
